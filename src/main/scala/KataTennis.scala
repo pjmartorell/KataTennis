@@ -9,7 +9,7 @@ class KataTennis(player1Name:String, player2Name:String){
   }
   
   def score : String = {
-    if ((p1 < 4 && p2 < 4) && (p1 + p2 < 6)){
+    if (p1 + p2 < 6){
       var s = p(p1)
       if (p1 == p2) s + "-All" else s + "-" + p(p2)
     }else{
